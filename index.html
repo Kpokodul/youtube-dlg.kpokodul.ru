@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base target="_blank">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+	<link rel="stylesheet" href="CSS/main.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+	<script src="JS/main.js"></script>
+	<link type="image/png" rel="icon" href="https://mrs0m30n3.github.io/youtube-dl-gui/images/thumbnail.png"/>
+	<title>YouTube-DLG на Русском</title>
+	<meta name="description" content="Хотите скачать видео с YouTube? YouTube-DLG - это лучшая программа для скачивания видео с тысячи сайтов в интренете. Извлекайте музыку из видео. Загружайте видео в любом удобном формате. И всё это абсолютно бесплатно!">
+	<meta name="Keywords" content="Скачать видео, YouTube-dl, YouTube-dl-gui, Youtube-DLG, dlg">  
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1 class="display-3">YouTube-dl GUI</h1>
+					<h3>Скачайте свои любимые видео</h3>
+					<button type="button" class="btn btn-lg btn-danger" onclick="downloadWin()">Скачать для Windows</button>
+					<button type="button" class="btn btn-lg btn-dark" onclick="download()">Другие платформы</button>
+					<div class="row small">
+						<p>*<a class="link-dark" href="https://rg3.github.io/youtube-dl/supportedsites.html">Поддерживаемые сайты для скачивания видео (ссылка)</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<h2>Описание</h2>
+			<p>YouTube-DLG (YouTube-dl GUI) - это кроссплатформенный продукт, который призван облегчить Вам жизнь при работе в интренте. С помощью него Вы сможите загружать видео со всех популярных площадок в интернете для просмотра видеоконтента. YouTube-DLG поддерживает загрузку видео в самых разных форматах (в том числе и извлечение звука из видео). Он абсолютно бесплатен и его код полностью открыт (Распространяется по лицензии <a href="https://unlicense.org/">Unlicense</a>), переведён на русский язык</p>
+		</div>
+		<div class="container">
+			<h2>Фото</h2>
+			<div class="row">
+				<div class="col">
+					<figure class="figure">
+						<a href="photo/photo1.PNG">
+							<img src="photo/photo1.PNG" class="photo img-thumbnail img-fluid figure-img" alt="Фото YouTube-gl GUI. Главный экран.">
+						</a>
+						<figcaption class="figure-caption">Главный экран</figcaption>
+					</figure>
+				</div>
+				<div class="col">
+					<figure class="figure">
+						<a href="photo/photo2.PNG">
+							<img src="photo/photo2.PNG" class="photo img-thumbnail img-fluid figure-img" alt="Фото YouTube-gl GUI. Экран настройки.">
+						</a>
+						<figcaption class="figure-caption">Экран настройки</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+		<div id="download" class="container">
+			<h2>Загрузки</h2>
+			<div class="row">
+				<div class="col">
+					
+				</div>
+				<div class="col"></div>
+			</div>
+			<table class="table">
+				<thead class="table-active">
+					<tr>
+						<th>Платформа</th>
+						<th>Тип</th>
+						<th>Закгрузка</th>
+					</tr>
+				</thead>
+				<tbody style="vertical-align: middle;">
+					<tr>
+						<td rowspan="2" class="platform"><img src="https://mrs0m30n3.github.io/youtube-dl-gui/styles/resources/win.png" alt=""> Windows</td>
+						<td class="table-success">Установщик</td>
+						<td class="table-success">
+							<a href="https://github.com/MrS0m30n3/youtube-dl-gui/releases/download/0.4/youtube-dl-gui-0.4-win-setup.zip"><img src="photo/ico1.png" width="16px" alt=""> Загрузить</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="table-warning">Портативная версия</td>
+						<td class="table-warning">
+							<a href="https://github.com/MrS0m30n3/youtube-dl-gui/releases/download/0.4/youtube-dl-gui-0.4-win-portable.zip"><img src="photo/ico1.png" width="16px" alt=""> Загрузить</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="platform"><img src="https://mrs0m30n3.github.io/youtube-dl-gui/styles/resources/arch.png" alt=""> Arch</td>
+						<td>Установщик</td>
+						<td>
+							<a href="https://aur.archlinux.org/packages/youtube-dl-gui-git/"><img src="photo/ico1.png" width="16px" alt=""> Загрузить</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="platform"><img src="https://mrs0m30n3.github.io/youtube-dl-gui/styles/resources/ubuntu.png" alt=""> Ubuntu</td>
+						<td>Установщик</td>
+						<td>
+							<a href="http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu/pool/main/y/youtube-dlg/"><img src="photo/ico1.png" width="16px" alt=""> Загрузить</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="platform"><img src="https://mrs0m30n3.github.io/youtube-dl-gui/styles/resources/slack.png" alt=""> Slackware</td>
+						<td>Установщик</td>
+						<td>
+							<a href="https://slackbuilds.org/repository/14.2/network/youtube-dl-gui/"><img src="photo/ico1.png" width="16px" alt=""> Загрузить</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="platform"><img src="https://mrs0m30n3.github.io/youtube-dl-gui/styles/resources/opensuse.png" alt=""> openSUSE</td>
+						<td>Установщик</td>
+						<td>
+							<a href="https://software.opensuse.org/package/youtube-dl-gui"><img src="photo/ico1.png" width="16px" alt=""> Загрузить</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="platform"><img src="https://mrs0m30n3.github.io/youtube-dl-gui/styles/resources/python.png" alt=""> PyPi</td>
+						<td>Установщик</td>
+						<td>
+							<a href="https://pypi.python.org/pypi/youtube-dlg/"><img src="photo/ico1.png" width="16px" alt=""> Загрузить</a>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr class="table-active">
+						<th>Формат</th>
+						<th>Тип</th>
+						<th>Получить</th>
+					</tr>
+					<tr>
+						<td class="platform"><img src="https://mrs0m30n3.github.io/youtube-dl-gui/styles/resources/zip.png" alt=""> zip</td>
+						<td class="table-warning">Исходный код</td>
+						<td class="table-warning">
+							<a href="https://github.com/MrS0m30n3/youtube-dl-gui/archive/0.4.zip"><img src="photo/ico1.png" width="16px" alt=""> Получить</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="platform"><img src="https://mrs0m30n3.github.io/youtube-dl-gui/styles/resources/tar.png" alt=""> tar</td>
+						<td class="table-warning">Исходный код</td>
+						<td class="table-warning">
+							<a href="https://github.com/MrS0m30n3/youtube-dl-gui/archive/0.4.tar.gz"><img src="photo/ico1.png" width="16px" alt=""> Получить</a>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+			<!-- <ul>
+				<li><a href="">Установщик Windows</a></li>
+				<li><a href="">Портативная Windows</a></li>
+				<li><a href="">Arch (Linux)</a></li>
+				<li><a href="">Ubuntu (Linux)</a></li>
+				<li><a href="">Slackware (Linux)</a></li>
+				<li><a href="">openSUSE (Linux)</a></li>
+				<li><a href="">PyPi (Python)</a></li>
+				<li><a href="">Исходный код (.zip)</a></li>
+				<li><a href="">Исходный код (.tar)</a></li>
+			</ul> -->
+		</div>
+		<div class="container">
+			<h2>Установка</h2>
+			<h4>Для Windows</h4>
+			<ul>
+				<li>Скачайте установочный файл</li>
+				<li>Запустите установочный файл программы от имени Администратора</li>
+				<li>Установите программу следуя интсрукциям установщика</li>
+				<li>Удалите установочный файл программы</li>
+			</ul>
+			<!-- <p>Более подробная инструкция по установке (с видеоматериалом) можно увидеть по <a href="">ссылке</a>.</p> -->
+			<h4>PyPi (Linux)</h4>
+			<p>
+				Выполните команду в терминале:
+				<code><b>$</b> pip install youtube-dlg</code>
+			</p>
+			<h4>Source (Linux)</h4>
+			<p>
+				Выполните команду в терминале:
+				<code><b>$</b> python setup.py install</code>
+			</p>
+		</div>
+	</main>
+	<footer class="container-fluid bg-dark text-light">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p>Программа распространяется по лицензии <a class="link-warning" href="https://unlicense.org/">Unlicense</a>. Все логотипы размещённые на сайте не пренадлежат авторам сайта, а являются собственностью третих лиц. Программа YouTube-DLG (YouTube-dl GUI) основана на YouTube-DL. Список поддерживаемых сайтов для скачивания видеоконтента может изменяться. </p>
+				</div>
+				<div class="col">
+					<p>Данный сайт является переведенной версией сайта сообщества программы на GitHub. Все ссылки на установочные образы ведут на офицальный репозиторий программы на Github. Программа была протестирована автарам сайта на Windows 10 Home 64-bit. <a class="link-warning" href="https://mrs0m30n3.github.io/youtube-dl-gui/">Англоязычный (оффициальный) сайт программы.</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+@font-face {
+	font-family: "UbuntuRegular";
+	src: url(../fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+	font-family: "UbuntuLight";
+	src: url(../fonts/Ubuntu-Light.ttf);
+}
+@font-face {
+	font-family: "UbuntuMedium";
+	src: url(../fonts/Ubuntu-Medium.ttf);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: UbuntuLight;
+}
+
+header {
+	padding-top: 1%;
+}
+
+.btn {
+	margin-top: 1%;
+}
+
+.logo {
+	height: 1em;
+  	width: 1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+.small {
+	font-size: 10pt;
+}
+
+h2 {
+	font-family: UbuntuMedium;
+}
+
+.photo {
+	width: 100%;
+}
+
+.platform {
+	vertical-align: middle;
+}
+
+code {
+	background-color: rgba(230, 0, 0, 0.1);
+	padding: 3px;
+}
+footer {
+	padding-top: 1%;
+}
